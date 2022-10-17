@@ -14,6 +14,7 @@ export default function SignIn({ providers }) {
                     Thanks for visitng the Instagram clone! Please Leave a Post
                 </p>
                 <p>Remember to Comment and Like!</p>
+                <p>Thank you for the constant support!</p>
                 </div>
                 <div className="mt-40">
                     {Object.values(providers).map((provider) => (
