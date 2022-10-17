@@ -7,7 +7,7 @@ import { Session } from 'next-auth';
 
 
 
-function MyApp({ Component, pageProps: { ...pageProps}}: AppProps<{
+function MyApp({ Component, pageProps: {session, ...pageProps}}: AppProps<{
   session: Session;
 }>) {
   return (
