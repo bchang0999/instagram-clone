@@ -7,11 +7,11 @@ import { Session } from 'next-auth';
 
 
 
-function MyApp({ Component, pageProps: { ...pageProps}}: AppProps<{
+function MyApp({ Component, pageProps: {session, ...pageProps}}: AppProps<{
   session: Session;
 }>) {
   return (
-    <SessionProvider session={pageProps.session}>
+    <SessionProvider session={session}>
       <RecoilRoot>
         <Component {...pageProps} />
       </RecoilRoot>
