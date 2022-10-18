@@ -10,6 +10,7 @@ export default NextAuth({
         }),
         // ...add more providers here
     ],
+    secret: process.env.NEXTAUTH_SECRET,
     // If you want to have a custom page... include this..
     pages: {
         signIn: "/auth/signin",
